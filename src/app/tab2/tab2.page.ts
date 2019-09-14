@@ -14,7 +14,7 @@ export class Tab2Page {
   constructor(public photoService: PhotoService,private photoViewer: PhotoViewer) {}
 
   viewPhoto(foto:any){
-    this.photoViewer.show(foto);
+    this.photoViewer.show(foto), '', {share: true};
 
   }
   ngOnInit() {
